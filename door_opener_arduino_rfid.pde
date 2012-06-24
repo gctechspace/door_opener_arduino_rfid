@@ -134,7 +134,7 @@ void postback_arduino_door_trigger(){
     // Make a HTTP request:
     
     serverGet = "GET /triggerdoor?pin=";
-    //serverGet.concat(currentPassword);
+    serverGet.concat(currentPassword);
     serverGet.concat("&go");
     serverGet.concat(" HTTP/1.0");
     
